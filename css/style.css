@@ -1,0 +1,87 @@
+@import url("./reset.css");
+body {
+margin: 20px;
+font-family: 'Times New Roman', Times, serif;
+
+}
+
+.article {
+display: flex;
+font-size: 16px;
+background-color: rgb(191, 95, 95);
+gap: 1rem;
+flex-direction: column;
+
+}
+
+
+.picBox {
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+@media (min-width: 500px) {
+    .podContainer {
+        flex-direction: row;
+        font-size: 18px;
+        justify-content: center;
+    }
+    .picBox {
+        flex-direction: row;
+        font-size: 18px;
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .article {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .picBox {
+        align-items: flex-start;
+    }
+    .podContainer {
+            align-items: flex-end;
+            flex-direction: column;
+            font-size: 20px;
+        }
+}
+
+
+.profilePic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /* object-fit: cover; */
+}
+
+.podContainer {
+    display: flex;
+    margin: 10px;
+    gap: 2rem;
+    flex: 1;
+}
+
+.contact {
+    display: flex;
+    /* text-align: start; */
+    margin: 1rem;
+    flex-wrap: wrap;
+    
+}
+
+.company {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+    
+}
+
+
